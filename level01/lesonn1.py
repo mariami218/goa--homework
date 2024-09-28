@@ -2,7 +2,7 @@ from turtle import*
 
 
 #we want to paint a house
-speed(7)
+speed(15)
 width(10)
 #step 1: draw a square
 color("brown")
