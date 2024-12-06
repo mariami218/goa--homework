@@ -1,0 +1,120 @@
+<!-- 
+1) **Inline ელემენტები**:
+   - Inline ელემენტები განლაგებულია გვერდის დინამიკაში (ერთ ხაზზე) სხვა ელემენტებთან ერთად. ისინი არ იკავებენ მთელ ხაზს.
+   - მაგ: `<span>`, `<a>`, `<img>`
+   
+2) **Block Level ელემენტები**:
+   - Block ელემენტები იწყებენ ახალ ხაზს და იკავებენ მთელ ხაზს.
+   - მაგ: `<div>`, `<p>`, `<h1>` 
+-->
+
+<!-- 
+**Inline CSS**: გამოიყენება HTML ელემენტში უშუალოდ `style` ატრიბუტის საშუალებით. 
+მაგალითი: `<p style="color: red;">Red Text</p>`
+
+**Internal CSS**: გამოიყენება `<style>` ტეგში, რომელიც განთავსებულია `<head>` ნაწილში.
+მაგალითი:
+<style>
+    p {
+        color: blue;
+    }
+</style>
+
+**External CSS**: გამოიყენება ცალკე ფაილში და უკავშირდება HTML-ს `<link>` ტეგის საშუალებით.
+მაგალითი: `<link rel="stylesheet" href="styles.css">`
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA</title>
+    <style>
+        body {font-family: Arial, sans-serif;background-color: #f8f8f8;color: #333;margin: 0;padding: 0;}
+        header, footer {background-color: #2c3e50;color: #ecf0f1;padding: 20px;text-align: center;}
+        nav {text-align: center;background-color: #34495e;padding: 10px 0;}
+        nav a {color: #ecf0f1;margin: 0 15px;text-decoration: none;}
+        section {padding: 20px;margin: 20px;background-color: #ecf0f1;border-radius: 8px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+        aside {background-color: #dff9fb;padding: 15px;border-radius: 8px;}
+        article {margin-top: 15px;font-size: 18px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to GOA</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#lessons"> programing lessons</a>
+        <a href="#programers" you can become  a chad></a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Goa</h2>
+            <p>Goa is the most coolest plase to learn proggraming you can learn here python,html,css,java and more and more.</p>
+        </section>
+        <section id="lessons">
+            <h2>lessons</h2>
+            <article>
+                <h3>2 hour lessons</h3>
+                <p>2 hour lessons,mhmm you might think that thats long time but no:)) lessons in goa are so fun, the mentors are most funny teacher ever im talking about my mentor ,,vano,, hr is so funny and learning with him is easy and again funny.</p>
+            </article>
+            <article>
+                <h3></h3>
+                <p>most good thing is classwork.. you are working and learning with team.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>leader-mini leader</h2>
+            <ul>
+                <li>if you gonna study a lot in goa and do homeworks you are gonna be mini leader-leader-mentor and more</li>
+                <li>study in goa there will respect you more than school</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2024 GOA Programming learn in goa</p>
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Foods</title>
+    <style>
+        body {font-family: Arial, sans-serif;background-color: #f4f4f4;color: #333;margin: 0;padding: 20px;}
+        .food-container {display: flex;flex-wrap: wrap;gap: 20px;}
+        .food {background-color: #fff;border: 2px solid black;border-radius: 8px;padding: 20px;width: 300px;text-align: center;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+        .food img {width: 100%;height: auto;border-radius: 8px;}.food h3 {font-size: 20px;color: #2c3e50;}
+    </style>
+</head>
+<body>
+    <h1>My Favourite Foods</h1>
+    <div class="food-container">
+        <div class="food">
+            <h3>Pizza</h3>
+            <img src="https://www.justspices.co.uk/media/magefan_blog/shutterstock_1048511935.jpg alt="Pizza">
+            <p>A cheesy delight with a crispy crust and delicious toppings.</p>
+        </div>
+        <div class="food">
+            <h3>Sushi</h3>
+            <img src="https://madloba.info/media/images/wasabi-sushi-bars-tbilisi_07.2e16d0ba.fill-720x405.jpg" alt="Sushi" alt="Sushi">
+            <p>A traditional Japanese dish with fresh fish and rice.</p>
+        </div>
+        <div class="food">
+            <h3>Ice Cream</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/640px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" alt="Ice Cream" alt="Ice Cream">
+            <p>Sweet and creamy dessert in a variety of flavors.</p>
+        </div>
+    </div>
+</body>
+</html>
