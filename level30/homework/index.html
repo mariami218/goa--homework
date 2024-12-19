@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Themed Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            color: #34495e;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .container {
+            border: 2px solid #2c3e50;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Themed Website</h1>
+    <div class="container">
+        <p>
+            This is a simple website created using internal CSS. You can see how the styling is applied directly in the `<style>` 'tag within the "`<head>` section of the HTML document.
+        </p>
+        
+         <button class="button">Click Me</button>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with ID and Class</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="unique-heading">This is styled with ID</h1>
+    <h1 class="common-heading">This is styled with Class</h1>
+</body>
+</html>
+
+/* <!--
+1. ID:
+   - გამოიყენება კონკრეტული უნიკალური ელემენტის სტილიზაციისთვის.
+   - ID არის უნიკალური: ერთი და იგივე ID არ შეიძლება გამოიყენოთ სხვადასხვა ელემენტზე.
+   - პრიორიტეტული სელექტორია Class და ელემენტის სელექტორთან შედარებით.
+   - სინტაქსი: `#id_name`.
+
+2. Class:
+   - გამოიყენება ერთდროულად რამდენიმე ელემენტის სტილიზაციისთვის.
+   - Class-ებს შორის შეგიძლიათ გამოიყენოთ იგივე სახელი მრავალ ელემენტზე.
+   - ნაკლებად პრიორიტეტულია ID-სთან შედარებით.
+   - სინტაქსი: `.class_name`.
+
+3. ელემენტის სელექტორი:
+   - ეხება HTML ელემენტებს (მაგ., `h1`, `p`, `div`).
+   - ყველაზე დაბალი პრიორიტეტი აქვს.
+   - სინტაქსი: `element_name`.
+
+პრიორიტეტულობა: 
+ID > Class > ელემენტის სელექტორი.
+-->
+
+ */
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styling</title>
+    <style>
+        .similar-buttons {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        .different-buttons {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 20px;
+            border: 2px solid #c0392b;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .similar-buttons:hover {
+            background-color: #27ae60;
+        }
+
+        .different-buttons:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <button class="similar-buttons">Button 1</button>
+    <button class="similar-buttons">Button 2</button>
+    <button class="different-buttons">Button 3</button>
+    <button class="different-buttons">Button 4</button>
+</body>
+</html>
+
