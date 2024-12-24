@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs</title>
+    <style>
+        /* 2. პარაგრაფი ტალღოვანი ხაზით ქვეშ */
+        .wavy-underline {
+            text-decoration: wavy underline;
+            text-decoration-color: green; /* მწვანე ფერი */
+            color: black; /* ტექსტის ფერი შავი */
+        }
+
+        /* 3. პარაგრაფი წყვეტილი ხაზებით ზემოდან და ქვემოდან */
+        .dashed-top-bottom {
+            border-top: 2px dashed red;
+            border-bottom: 2px dashed red;
+            padding: 10px;
+            color: #000; /* ტექსტის ფერი შავი */
+        }
+
+        /* 4. პარაგრაფი წყვეტილი ხაზებით შუაში */
+        .dashed-middle {
+            text-decoration: line-through;
+            text-decoration-style: dashed;
+            text-decoration-color: blue; /* ლურჯი ფერი */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Paragraph Examples</h1>
+
+    <!-- 2. ტალღოვანი ხაზი ქვეშ -->
+    <p class="wavy-underline">This is a paragraph with a wavy underline in green.</p>
+
+    <!-- 3. წყვეტილი ხაზები ზემოდან და ქვემოდან -->
+    <p class="dashed-top-bottom">This is a paragraph with dashed lines above and below in red.</p>
+
+    <!-- 4. წყვეტილი ხაზები შუაში -->
+    <p class="dashed-middle">This is a paragraph with dashed lines through the middle in blue.</p>
+</body>
+</html>
