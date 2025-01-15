@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects and Link Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .box1 {
+            background-color: #87CEFA; /* Sky Blue */
+        }
+        .box2 {
+            background-color: #FFD700; /* Gold */
+        }
+        .box1:hover {
+            width: 350px;
+            height: 350px;
+            background-color: #4682B4; /* Steel Blue */
+        }
+        .box2:hover {
+            width: 350px;
+            height: 350px;
+            background-color: #FF8C00; /* Dark Orange */
+        }
+        a {
+            text-decoration: none;
+            color: #0000FF; /* Blue */
+            font-size: 18px;
+        }
+        a:visited {
+            color: #8A2BE2; /* Blue Violet */
+        }
+        a:hover {
+            color: #FF4500; /* Orange Red */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <br>
+    <a href="https://www.facebook.com/goa" target="_blank">Visit Goa's Facebook Page</a>
+</body>
+</html>
+

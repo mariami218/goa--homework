@@ -3,7 +3,7 @@
 #შვასწოროთ (debug)
 
 
-name = 'Alice
+name = 'Alice'
 print(name)
 
 salary = 75000
