@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex კუთვნილებები</title>
+    <style>
+        /* მშობელ ელემენტს ვაძლევთ display:flex, რათა ის გახდეს flex კონტეინერი */
+        .flex-container {
+            display: flex; /* Flexbox-ის ჩართვა */
+            flex-direction: row; /* ელემენტები განლაგდება მწკრივში (row) */
+            justify-content: center; /* ელემენტები განლაგდება ჰორიზონტალურად ცენტრში */
+            align-items: center; /* ელემენტები განლაგდება ვერტიკალურად ცენტრში */
+            gap: 10px; /* ელემენტებს შორის სივრცე */
+            border: 2px solid black; /* კონტეინერის საზღვარი */
+            height: 200px; /* კონტეინერის სიმაღლე */
+        }
+
+        /* შვილების სტილიზაცია */
+        .flex-item {
+            flex: 1; /* თითოეული ელემენტი იკავებს თანაბარ სივრცეს */
+            padding: 10px; /* შიდა სივრცე */
+            background-color: lightblue; /* ფონის ფერი */
+            text-align: center; /* ტექსტის ცენტრში განლაგება */
+            border: 1px solid blue; /* საზღვარი */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex კონტეინერი -->
+    <div class="flex-container">
+        <!-- თითოეული ელემენტი არის flex child -->
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+</body>
+</html>
+
+
+<div style="width: 200px; height: 100px;">შინაარსი</div>
+
+<div style="padding: 20px;">შიგთავსის გარშემო დამატებული სივრცე</div>
+
+<div style="border: 2px solid black;">საზღვარი</div>
+
+<div style="margin: 30px;">გარე სივრცე</div>
+

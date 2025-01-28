@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        /* Flex კონტეინერი */
+        .container {
+            display: flex; /* Flexbox-ის ჩართვა */
+            flex-direction: row; /* ელემენტები განლაგდება ჰორიზონტალურად */
+            justify-content: space-around; /* ელემენტებს შორის თანაბარი სივრცე */
+            align-items: center; /* ელემენტები ვერტიკალურად ცენტრში */
+            height: 300px; /* კონტეინერის სიმაღლე */
+            border: 2px solid gray; /* საზღვარი */
+        }
+
+        /* შვილების სტილიზაცია */
+        .item {
+            width: 100px; /* ელემენტის სიგანე */
+            height: 100px; /* ელემენტის სიმაღლე */
+            background-color: lightcoral; /* ფონის ფერი */
+            display: flex; /* Flex შიგნით განლაგებისთვის */
+            justify-content: center; /* ტექსტის ჰორიზონტალურად ცენტრში */
+            align-items: center; /* ტექსტის ვერტიკალურად ცენტრში */
+            color: white; /* ტექსტის ფერი */
+            font-size: 18px; /* შრიფტის ზომა */
+            border-radius: 10px; /* კუთხეების მომრგვალება */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex კონტეინერი -->
+    <div class="container">
+        <!-- Flex ელემენტები -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
+
