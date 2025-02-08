@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F7D65A;
+            margin: 0;
+        }
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .card img.top-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 15px;
+        }
+        .tag {
+            display: inline-block;
+            background: #F1C40F;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .desc {
+            font-size: 14px;
+            color: #555;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .profile img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .profile span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="top-image" src="https://img.freepik.com/premium-vector/universal-trend-halftone-geometric-shapes-set-juxtaposed-with-bright-bold-yellow-elements-composition-design-elements-magazine-leaflet-billboard-sale_155340-1769.jpg?w=2000" alt="Illustration">
+        <div class="content">
+            <span class="tag">Learning</span>
+            <p class="title">HTML & CSS foundations</p>
+            <p class="desc">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+            <div class="profile">
+                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Profile Picture">
+                <span>Greg Hooper</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
