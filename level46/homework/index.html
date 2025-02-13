@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Omelette Recipe</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #faefe0;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff7ec;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        .recipe-image {
+            width: 40%;
+            height: auto;
+            border-radius: 15px;
+            margin: 0 auto;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .text-content {
+            text-align: left;
+            width: 55%;
+            padding-right: 30px;
+        }
+        
+        h1 {
+            color: #151310;
+        }
+        
+        h2 {
+            color: #200122;
+        }
+        
+        ul, ol {
+            text-align: left;
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        p {
+            color: #5a3e2b;
+        }
+        
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #faefe0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .nutrition-table th, .nutrition-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #d4bfa3;
+            color: #5a3e2b;
+        }
+        
+        .nutrition-table th {
+            font-weight: bold;
+        }
+        
+        .nutrition-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #a64b2a;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.prod.website-files.com/66d8c88bf5ab248cea9b7801/66e078d7400d8d54dcdc67a4_Untitled2.webp" alt="Simple Omelette" class="recipe-image">
+        <div class="text-content">
+            <h1>Simple Omelette Recipe</h1>
+            <p>A classic and easy-to-make omelette for your breakfast.</p>
+            
+            <h2>Preparation Time</h2>
+            <ul>
+                <li>Prep: 5 minutes</li>
+                <li>Cooking: 5 minutes</li>
+            </ul>
+            
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 large eggs</li>
+                <li>Salt and pepper to taste</li>
+                <li>1 tbsp butter or oil</li>
+                <li>Optional: Cheese, herbs, veggies</li>
+            </ul>
+            
+            <h2>Instructions</h2>
+            <ol>
+                <li>Beat the eggs in a bowl with salt and pepper.</li>
+                <li>Heat butter or oil in a pan over medium heat.</li>
+                <li>Pour the eggs into the pan and cook until slightly set.</li>
+                <li>Fold the omelette and serve warm.</li>
+            </ol>
+            
+            <h2>Nutrition</h2>
+            <p>The table below shows nutritional values per serving without the additional fillings.</p>
+            <table class="nutrition-table">
+                <tr>
+                    <th>Calories</th>
+                    <td class="highlight">277kcal</td>
+                </tr>
+                <tr>
+                    <th>Carbs</th>
+                    <td>0g</td>
+                </tr>
+                <tr>
+                    <th>Protein</th>
+                    <td>20g</td>
+                </tr>
+                <tr>
+                    <th>Fat</th>
+                    <td>22g</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
