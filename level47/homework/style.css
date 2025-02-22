@@ -1,0 +1,78 @@
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;  /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    flex-direction: column;  /* Vertical stacking of sections */
+    height: 100vh;
+  }
+  
+  /* Base styles for cubes */
+  .cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(251, 251, 251);
+    border-radius: 12px;  /* Rounded corners */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(221, 198, 198, 0.31);  /* Subtle shadow for 3D effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  /* Transition effect */
+  }
+  
+  /* Cube sizes and colors */
+  .cube-1 {
+    width: 50px;
+    height: 50px;
+    background-color: #660f05;  /* Red */
+  }
+  
+  .cube-2 {
+    width: 60px;
+    height: 60px;
+    background-color: #d28509;  /* Yellow */
+  }
+  
+  .cube-3 {
+    width: 70px;
+    height: 70px;
+    background-color: #551502;  /* Green */
+  }
+  
+  .cube-4 {
+    width: 80px;
+    height: 80px;
+    background-color: #eccf0e;  /* Blue */
+  }
+  
+  .cube-5 {
+    width: 90px;
+    height: 90px;
+    background-color: #790505;  /* Purple */
+  }
+  
+  /* Hover effect */
+  .cube:hover {
+    transform: scale(1.1);  /* Scale up on hover */
+  }
+  
+  /* Container for flex layout - Vertical */
+  .container.vertical {
+    display: flex;
+    flex-direction: column; /* Arrange cubes vertically */
+    gap: 15px;
+    margin-bottom: 50px; /* Space between vertical and horizontal containers */
+  }
+  
+  /* Container for flex layout - Horizontal */
+  .container.horizontal {
+    display: flex;
+    flex-direction: row; /* Arrange cubes horizontally */
+    gap: 20px;
+  }
+  

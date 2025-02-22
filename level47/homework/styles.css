@@ -1,0 +1,114 @@
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;  /* Light gray background */
+    overflow: hidden;  /* Ensure no scrolling */
+  }
+  
+  /* Container for flex layout to distribute boxes across screen */
+  .container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow boxes to wrap */
+    justify-content: flex-start;  /* Align items to the left (no space between) */
+    align-items: flex-start;
+    width: 100vw;  /* Full width */
+    height: 100vh;  /* Full height */
+    padding: 20px;
+    gap: 10px;  /* Reduce the gap between the boxes */
+    box-sizing: border-box;
+  }
+  
+  /* Base styles for boxes */
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;  /* Rounded corners */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  /* Transition effect */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #000;  /* Black border added to all boxes */
+  }
+  
+  /* Small size boxes */
+  .small {
+    width: 20%;  /* Take 20% of the width */
+    height: 20%;  /* Take 20% of the height */
+    background-color: #e74c3c;  /* Red */
+  }
+  
+  /* Medium size boxes */
+  .medium {
+    width: 35%;  /* Take 35% of the width */
+    height: 30%;  /* Take 30% of the height */
+    background-color: #f39c12;  /* Yellow */
+  }
+  
+  /* Large size boxes */
+  .large {
+    width: 45%;  /* Take 45% of the width */
+    height: 45%;  /* Take 45% of the height */
+    background-color: #2ecc71;  /* Green */
+  }
+  
+  /* Elongated box 8 */
+  .long {
+    width: 55%;  /* Take 55% of the width */
+    height: 25%;  /* Take 25% of the height */
+    background-color: #f1c40f;  /* Yellow */
+    transform: rotate(-10deg);  /* Slight rotation to make it diagonal */
+  }
+  
+  /* Box 4 - Smaller cube */
+  .box-4 {
+    background-color: #3498db;  /* Blue */
+    height: 20%;  /* Smaller height */
+    width: 20%;  /* Smaller width */
+  }
+  
+  /* Specific box styles */
+  .box-1 {
+    background-color: #e74c3c;  /* Red */
+  }
+  
+  .box-2 {
+    background-color: #f39c12;  /* Yellow */
+  }
+  
+  .box-3 {
+    background-color: #2ecc71;  /* Green */
+  }
+  
+  .box-5 {
+    background-color: #9b59b6;  /* Purple */
+  }
+  
+  .box-6 {
+    background-color: #8e44ad;  /* Purple */
+  }
+  
+  .box-7 {
+    background-color: #16a085;  /* Turquoise */
+  }
+  
+  .box-8 {
+    background-color: #f1c40f;  /* Yellow */
+  }
+  
+  /* Hover effect for scale and shadow */
+  .box:hover {
+    transform: scale(1.05);  /* Slightly increase size on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);  /* Darker shadow when hovered */
+  }
+  
+  
