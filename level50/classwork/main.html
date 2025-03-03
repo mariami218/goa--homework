@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Example</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .static { background: gray; position: static; }
+        .relative { background: blue; position: relative; left: 50px; top: 20px; }
+        .absolute { background: red; position: absolute; top: 50px; left: 50px; }
+        .fixed { background: green; position: fixed; top: 10px; right: 10px; }
+        .sticky { background: orange; position: sticky; top: 0; }
+        
+        .container {
+            position: relative;
+            height: 500px;
+            background: lightgray;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    
+    <div class="container">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+    <div class="box sticky">Sticky</div>
+
+    <div style="height: 1000px;">გადახვიეთ, რომ fixed და sticky მოქმედებაში ნახოთ.</div>
+
+</body>
+</html>

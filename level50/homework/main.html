@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Column Preview Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-6">
+    <div class="max-w-4xl flex flex-col md:flex-row text-white text-left overflow-hidden rounded-lg">
+        <!-- Sedan Card -->
+        <div class="bg-orange-500 p-8 flex-1">
+            <img src="icon-sedans.svg" alt="Sedan" class="mb-4">
+            <h2 class="text-2xl font-bold">Sedans</h2>
+            <p class="my-4 opacity-80">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city.</p>
+            <a href="#" class="inline-block mt-6 bg-white text-orange-500 px-6 py-2 rounded-full font-bold hover:bg-orange-100">Learn More</a>
+        </div>
+        
+        <!-- SUV Card -->
+        <div class="bg-teal-500 p-8 flex-1">
+            <img src="icon-suvs.svg" alt="SUVS" class="mb-4">
+            <h2 class="text-2xl font-bold">SUVs</h2>
+            <p class="my-4 opacity-80">Take an SUV for its spacious interior, power, and versatility. Perfect for family road trips.</p>
+            <a href="#" class="inline-block mt-6 bg-white text-teal-500 px-6 py-2 rounded-full font-bold hover:bg-teal-100">Learn More</a>
+        </div>
+        
+        <!-- Luxury Card -->
+        <div class="bg-blue-500 p-8 flex-1">
+            <img src="icon-luxury.svg" alt="Luxury" class="mb-4">
+            <h2 class="text-2xl font-bold">Luxury</h2>
+            <p class="my-4 opacity-80">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury car.</p>
+            <a href="#" class="inline-block mt-6 bg-white text-blue-500 px-6 py-2 rounded-full font-bold hover:bg-blue-100">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>
