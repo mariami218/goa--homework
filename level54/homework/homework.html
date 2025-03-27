@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რესპონსიული დიზაინი</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .holiday-container {
+            width: 50%;
+            text-align: center;
+        }
+        .holiday-container img {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .holiday-container p {
+            font-size: 16px;
+        }
+        
+        .responsive-div {
+            width: 80%;
+            height: 100px;
+            background-color: rgb(0, 39, 52);
+            margin-top: 20px;
+            transition: width 0.3s ease;
+        }
+        
+        @media (max-width: 1200px) {
+            .responsive-div {
+                width: 40%;
+            }
+        }
+        @media (max-width: 800px) {
+            .responsive-div {
+                width: 20%;
+            }
+        }
+        @media (max-width: 400px) {
+            .responsive-div {
+                width: 10%;
+            }
+            .holiday-container img {
+                max-width: 150px;
+            }
+            .holiday-container p {
+                font-size: 12px;
+            }
+        }
+        
+        .responsive-info {
+            max-width: 80%;
+            text-align: justify;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="holiday-container">
+        <img src="https://static.wixstatic.com/media/3230ff_3c2b7bb485994acfb81345a8930fef17~mv2.webp/v1/fill/w_568,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3230ff_3c2b7bb485994acfb81345a8930fef17~mv2.webp" alt="ჩემი საყვარელი დღესასწაული">
+        <p>ჩემი საყვარელი დღესასწაული არის აღდგომა, რადგან ეს დღე სიმბოლოა სიცოცხლის, განახლებისა და იმედისა.</p>
+    </div>
+
+</body>
+</html>

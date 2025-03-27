@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ზომისა და ფერის შეცვლის ანიმაცია</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: changeSizeAndColor 5s ease-in-out 2s forwards;
+        }
+
+        @keyframes changeSizeAndColor {
+            0% {
+                background-color: blue;
+                width: 200px;
+                height: 150px;
+            }
+            100% {
+                background-color: orange;
+                width: 400px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მოძრავი ყუთი</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: moveBox 5s infinite linear;
+        }
+
+        @keyframes moveBox {
+            0% {
+                background-color: blue;
+                transform: translate(-50%, -50%);
+            }
+            25% {
+                background-color: red;
+                transform: translate(-50%, calc(-50% - 40px));
+            }
+            50% {
+                background-color: green;
+                transform: translate(calc(-50% + 60px), calc(-50% - 40px));
+            }
+            75% {
+                background-color: yellow;
+                transform: translate(calc(-50% + 60px), -50%);
+            }
+            100% {
+                background-color: blue;
+                transform: translate(-50%, -50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

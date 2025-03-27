@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რესპონსიული დიზაინი</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .holiday-container {
+            width: 50%;
+            text-align: center;
+        }
+        .holiday-container img {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .holiday-container p {
+            font-size: 16px;
+        }
+        
+        .responsive-div {
+            width: 80%;
+            height: 100px;
+            background-color: rgb(0, 39, 52);
+            margin-top: 20px;
+            transition: width 0.3s ease;
+        }
+        
+        @media (max-width: 1200px) {
+            .responsive-div {
+                width: 40%;
+            }
+        }
+        @media (max-width: 800px) {
+            .responsive-div {
+                width: 20%;
+            }
+        }
+        @media (max-width: 400px) {
+            .responsive-div {
+                width: 10%;
+            }
+            .holiday-container img {
+                max-width: 150px;
+            }
+            .holiday-container p {
+                font-size: 12px;
+            }
+        }
+        
+        .responsive-info {
+            max-width: 80%;
+            text-align: justify;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+     <div class="responsive-div"></div>
+    
+    <div class="responsive-info">
+        <h2>რას ნიშნავს რესპონსივი?</h2>
+        <p>
+            რესპონსიული ვებდიზაინი (Responsive Web Design) არის ტექნიკა, რომელიც საშუალებას აძლევს ვებსაიტს ავტომატურად მოერგოს სხვადასხვა ზომის ეკრანებს. 
+            ეს უზრუნველყოფს მომხმარებლის უკეთეს გამოცდილებას, რადგან საიტის შინაარსი ადაპტირდება და ოპტიმიზირდება როგორც კომპიუტერებისთვის, ასევე პლანშეტებისა და მობილურებისთვის.
+        </p>
+        <p>
+            რესპონსიული დიზაინის მთავარი უპირატესობა ის არის, რომ საჭიროა მხოლოდ ერთი ვერსია საიტისა, რომელიც ყველა მოწყობილობაზე სწორად გამოჩნდება. 
+            მასში გამოიყენება CSS მედია მოთხოვნები (@media queries), მოქნილი განლაგება (flexbox, grid) და მოქნილი გამოსახულებები.
+        </p>
+    </div>
+</body>
+</html>

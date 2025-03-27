@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტურისტული ინფორმაცია</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .tour-container img {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .tour-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .tour-container img {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+        .tour-container img:hover{ 
+            transform: scale(1.1);
+        }
+        .tour-container {
+            width: 80%;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .tour-container img {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .tour-container p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        
+        .responsive-div {
+            width: 80%;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 20px;
+            transition: width 0.3s ease;
+        }
+        
+        @media (max-width: 1200px) {
+            .responsive-div {
+                width: 40%;
+            }
+        }
+        @media (max-width: 800px) {
+            .responsive-div {
+                width: 20%;
+            }
+        }
+        @media (max-width: 400px) {
+            .responsive-div {
+                width: 10%;
+            }
+            .tour-container img {
+                max-width: 200px;
+            }
+            .tour-container p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tour-container">
+        <h2>საქართველო - ტურისტული სამოთხე</h2>
+        <img src="https://cdn.bunniktours.com.au/public/posts/images/Europe/Tbilisi%20-%201234016323-feature.jpg" alt="ყაზბეგი">
+        <p>საქართველო არის ულამაზესი ქვეყანა, რომელიც ცნობილია თავისი ბუნებით, კულტურით და გასაოცარი ლანდშაფტებით. აქ შეგიძლიათ მოინახულოთ კავკასიონის მთები, ზღვისპირა ქალაქი ბათუმი, ისტორიული ძეგლები და მდიდარი ღვინის რეგიონები.</p>
+    </div>
+    
+    <div class="responsive-div"></div>
+</body>
+</html>

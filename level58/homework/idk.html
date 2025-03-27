@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Preview Component</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e5e8f5;
+        }
+
+        .card {
+            display: flex;
+            width: 700px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 30px;
+            width: 60%;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .share-btn {
+            background: #eceff2;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://www.joebrowns.co.uk/media/mgs_blog/m/DIY-upcycle.jpg" alt="Article Image">
+        <div class="content">
+            <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+            <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+            <div class="footer">
+                <div class="author">
+                    <img src="https://via.placeholder.com/40" alt="Author">
+                    <div>
+                        <strong>Michelle Appleton</strong>
+                        <p style="margin: 0; font-size: 12px; color: #777;">28 Jun 2020</p>
+                    </div>
+                </div>
+                <button class="share-btn">🔗</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,8 +4,8 @@ healthy_food = {"Salad", "Fruits", "Vegetables", "Nuts"}
 fast_food.update(healthy_food)  # ახალი ელემენტების დამატება
 print(fast_food)
 
-def remove_duplicates(lst):
-    return list(set(lst))
+def remove_duplicates(arr):
+    return list(set(arr))
 
 list1 = [7, 5, 44, 14, 5, 5, 44]
 list2 = [89, 90, 56, 45, 90, 78, 90]

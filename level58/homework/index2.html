@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Preview Component</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #edf0ff;
+        }
+
+        .card {
+            display: flex;
+            width: 700px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 30px;
+            width: 60%;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .share-btn {
+            background: #eceff2;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://www.joebrowns.co.uk/media/mgs_blog/m/DIY-upcycle.jpg" alt="Article Image">
+        <div class="content">
+            <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+            <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+            <div class="footer">
+                <div class="author">
+                    <img src="data:image/jpeg;base64,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" alt="Author">
+                    <div>
+                        <strong>Michelle Appleton</strong>
+                        <p style="margin: 0; font-size: 12px; color: #777;">28 Jun 2020</p>
+                    </div>
+                </div>
+                <button class="share-btn">🔗</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

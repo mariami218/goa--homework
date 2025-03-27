@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მოძრავი კვადრატი</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .moving-box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 20px;
+            transition: transform 0.5s ease-in-out, border-radius 0.5s ease;
+        }
+
+        .moving-box:hover {
+            transform: translate(-50px, 100px) scale(2) rotate(-180deg);
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="moving-box"></div>
+
+</body>
+</html>

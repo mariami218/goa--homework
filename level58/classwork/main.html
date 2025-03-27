@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ყუთის ანიმაცია</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: changeBox 3s infinite alternate;
+        }
+
+        @keyframes changeBox {
+            0% {
+                background-color: green;
+                width: 100px;
+                height: 100px;
+            }
+            50% {
+                background-color: yellow;
+                width: 150px;
+                height: 150px;
+            }
+            100% {
+                background-color: red;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
