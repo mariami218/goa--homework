@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    pre {
+      font-size: 20px;
+      margin: 15px 0;
+      font-family: monospace;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 12px;
+      height: 80vh;
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    .box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size: 28px;
+      font-weight: 800;
+      padding: 20px;
+    }
+
+    .box1 {
+      background-color: cyan;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .box2 {
+      background-color: magenta;
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
+
+    .box3 {
+      background-color: yellow;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .box4 {
+      background-color: lime;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .box5 {
+      background-color: orange;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Layout</h1>
+  <pre>&lt;div class="boxes"&gt;</pre>
+  <div class="boxes">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+  </div>
+  <pre>&lt;/div&gt;</pre>
+</body>
+</html>
+

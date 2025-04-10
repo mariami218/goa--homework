@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Preview Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: hsl(30, 38%, 92%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 300px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-content .category {
+      letter-spacing: 5px;
+      color: hsl(228, 12%, 48%);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .card-content h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      color: hsl(212, 21%, 14%);
+      margin-bottom: 1rem;
+    }
+
+    .card-content p {
+      font-size: 0.875rem;
+      color: hsl(228, 12%, 48%);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .price .current {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      color: hsl(158, 36%, 37%);
+    }
+
+    .price .original {
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+      font-size: 0.875rem;
+    }
+
+    .add-to-cart {
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+      background-color: hsl(158, 36%, 20%);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://chiever.nl/wp-content/uploads/Chanel2-1368x1368.jpg" alt="Gabrielle Essence Eau De Parfum">
+    <div class="card-content">
+      <div class="category">Perfume</div>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <div class="price">
+        <div class="current">$149.99</div>
+        <div class="original">$169.99</div>
+      </div>
+      <button class="add-to-cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"><path fill="currentColor" d="M0 2a1 1 0 0 1 1-1h1.22a1 1 0 0 1 .98.804L3.89 4H14a1 1 0 0 1 .98 1.196l-1.5 8A1 1 0 0 1 12.5 14H4.118a1 1 0 0 1-.98-.804L2.01 5.607 1.342 3H1a1 1 0 0 1-1-1Zm4.38 11h7.72l1.2-6H3.2l1.18 6ZM6 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</body>
+</html>
+
