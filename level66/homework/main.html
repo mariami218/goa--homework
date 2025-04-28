@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jaden Test</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Don't Click the Image!</h1>
+    <img 
+  src="https://cdn.pixabay.com/photo/2013/04/01/10/55/no-touching-98622_1280.png" 
+  style="display: block; margin: auto; width: 300px;  alt="Do Not Touch Sign" 
+  onclick="alert('Do not touch!')">
+
+    <script>
+      let mood = "happy";      // თავდაპირველი მნიშვნელობა
+      mood = "confused";       // mood ახლა შეიცვალა
+      console.log(mood);       // ბეჭდავს: confused
+
+    
+    // let — გამოიყენება ცვლადისთვის, რომლის მნიშვნელობას მომავალში შეცვლი.
+// const — გამოიყენება ცვლადისთვის, რომლის მნიშვნელობა არ უნდა შეიცვალოს (მუდმივია).
+
+let age = 18;        // ასაკი შესაძლოა გაიზარდოს მომავალში
+age = 19;            // შეცვალე age
+
+const birthYear = 2000; // დაბადების წელი უცვლელია
+// birthYear = 2001;     ❌ ეს შეცდომას გამოიწვევს, რადგან const არ იცვლება
+
+
+
+// document ობიექტი წარმოადგენს მთელ ვებ-გვერდს (HTML დოკუმენტს).
+// მისი დახმარებით შეგვიძლია მივწვდეთ, შევცვალოთ ან ვამოქმედოთ HTML ელემენტები.
+// მაგალითად, შეგვიძლია ავიღოთ ღილაკი და დავამატოთ ქლიქის ფუნქცია.
+    
+// ✔️ ძირითადი მონაცემთა ტიპები JavaScript-ში:
+
+// 1. string (სტრიქონი) - ტექსტი
+// 2. number (რიცხვი) - 123, 4.56
+// 3. boolean (ბულოვანი) - true / false
+// 4. undefined - როცა ცვლადს არ აქვს მნიშვნელობა
+// 5. null - "ცარიელი" მნიშვნელობა
+// 6. object - მონაცემთა სტრუქტურა (მაგ. {name: "Mariami"})
+// 7. array (მასივი) - ელემენტების სია (მაგ. [1, 2, 3])
+// 8. symbol - უნიკალური იდენტიფიკატორი (იშვიათად გამოიყენება)
+// 9. bigint - ძალიან დიდი რიცხვებისთვის
+    
+    </script>
+</body>
+</html>
