@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება - JavaScript</title>
+  <style>
+    body {
+      font-family: "BPG Glaho", sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #6a1b9a;
+    }
+    pre {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>JS დავალებები (გოგონების სახელებით)</h1>
+  <p>შეამოწმე კონსოლი (F12 → Console)</p>
+
+  <script>
+    // 1) ობიექტი და სახელი/გვარის ამოღება
+    let me = {
+      firstName: "მარია",
+      lastName: "გოგიჩაიშვილი"
+    };
+
+    console.log("1) სახელი:", me.firstName);
+    console.log("1) გვარი:", me.lastName);
+
+    let user = {
+      name: "ანა",
+      surname: "კვიციანი"
+    };
+
+    console.log("1) სახელი:", user.name);
+    console.log("1) გვარი:", user.surname);
+
+    // 2) ობიექტის value-ების განახლება
+    let girl = {
+      firstName: "ეკატერინე",
+      lastName: "მაჩაბელი"
+    };
+
+    girl.firstName = "ნინო";
+    girl.lastName = "ჯავახაძე";
+    console.log("2) განახლებული:", girl);
+
+    let student = {
+      name: "თამარი",
+      surname: "ლაშქარაშვილი"
+    };
+
+    student.name = "ლანა";
+    student.surname = "მგელაძე";
+    console.log("2) სხვა განახლებული:", student);
+
+    // 3) var vs let vs const
+    var favoriteColor = "შავი";
+    var favoriteColor = "მუქი ლურჯი";
+    let age = 15;
+    const birthPlace = "სენაკი";
+
+    console.log("3) ფერი:", favoriteColor);
+    console.log("3) ასაკი:", age);
+    console.log("3) დაბადების ადგილი:", birthPlace);
+
+    let score = 100;
+    score = 120;
+
+    const maxScore = 150;
+
+    var mood = "ბედნიერი";
+    mood = "დამწუხრებული";
+
+    console.log("3) ქულა:", score);
+    console.log("3) მაქს ქულა:", maxScore);
+    console.log("3) განწყობა:", mood);
+
+    // 4) სტრინგის სიგრძე
+    let girlName = "სალომე";
+    console.log("4) სახელი სიგრძე:", girlName.length);
+
+    let phrase = "დღეს კარგი ამინდია";
+    console.log("4) სტრინგის სიგრძე:", phrase.length);
+
+    // 5) Uppercase და Lowercase
+    let name = "ANA";
+    console.log("5) Upper:", name.toUpperCase());
+    console.log("5) Lower:", name.toUpperCase().toLowerCase());
+
+    let city = "ბათუმი";
+    console.log("5) Upper:", city.toUpperCase());
+    console.log("5) Lower:", city.toLowerCase());
+
+    // 6) 5-5 მაგალითი
+
+    // var მაგალითები
+    var girl1 = "მარიამი";
+    var girl2 = "ლანა";
+    var girl3 = "თინათინი";
+    var girl4 = "რუსუდანი";
+    var girl5 = "ქეთევანი";
+    console.log("6) var:", girl1, girl2, girl3, girl4, girl5);
+
+    // let მაგალითები
+    let city1 = "თბილისი";
+    let city2 = "რუსთავი";
+    let city3 = "ზუგდიდი";
+    let city4 = "გორი";
+    let city5 = "ქუთაისი";
+    console.log("6) let:", city1, city2, city3, city4, city5);
+
+    // const მაგალითები
+    const lang1 = "ქართული";
+    const lang2 = "ინგლისური";
+    const lang3 = "ფრანგული";
+    const lang4 = "იტალიური";
+    const lang5 = "ესპანური";
+    console.log("6) const:", lang1, lang2, lang3, lang4, lang5);
+
+    // length მაგალითები
+    let n1 = "მარიამი";
+    let n2 = "სოფო";
+    let n3 = "ეკატერინე";
+    let n4 = "ანამარია";
+    let n5 = "ლილე";
+    console.log("6) length:", n1.length, n2.length, n3.length, n4.length, n5.length);
+
+    // Uppercase/Lowercase მაგალითები
+    let girlA = "მარიამი";
+    let girlB = "სალომე";
+    let girlC = "ლელა";
+    let girlD = "თამარი";
+    let girlE = "ანა";
+
+    console.log("6) Case:", girlA.toUpperCase(), girlA.toLowerCase());
+    console.log("6) Case:", girlB.toUpperCase(), girlB.toLowerCase());
+    console.log("6) Case:", girlC.toUpperCase(), girlC.toLowerCase());
+    console.log("6) Case:", girlD.toUpperCase(), girlD.toLowerCase());
+    console.log("6) Case:", girlE.toUpperCase(), girlE.toLowerCase());
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript მაგალითები</title>
+  <style>
+    img {
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- კომენტარი DOM-ზე -->
+  <!-- 
+    DOM ნიშნავს Document Object Model-ს.
+    ეს არის დოკუმენტის სტრუქტურა როგორც ობიექტების ხე.
+    საშუალებას აძლევს JavaScript-ს წაიკითხოს და შეცვალოს HTML ელემენტები.
+  -->
+
+  <!--let და const-ის განსხვავება-->
+  <script>
+    let age = 25;
+    age = 30; // ნებადართულია
+
+    const name = "Mariami";
+    // name = "Elizabedi"; // შეცდომაა
+    console.log("Age:", age);
+    console.log("Name:", name);
+  </script>
+
+  <!-- ღილაკი alert-ისთვის-->
+  <button onclick="showAlert()">Click Me</button>
+
+  <script>
+    function showAlert() {
+      alert("Hello User");
+    }
+  </script>
+
+  <!--სურათის გაზრდა კლიკზე-->
+  <img id="myImage" src="https://i.pinimg.com/736x/56/bc/55/56bc553af7a723908cd96394ce96344e.jpg" width="200" onclick="enlargeImage()" alt="სურათი">
+
+  <script>
+    function enlargeImage() {
+      const img = document.getElementById("myImage");
+      img.style.width = "400px"; // გაზრდა
+    }
+  </script>
+
+  <!-- ცვლადის გამოცხადება და განახლება -->
+  <script>
+    let color = "red";
+    console.log("პირველი ფერი:", color);
+    color = "blue";
+    console.log("განახლებული ფერი:", color);
+  </script>
+
+  <!-- კოდის შედეგი -->
+  <script>
+    let x = 5;
+    console.log(x++);  // 5 - ჯერ დაბეჭდავს, შემდეგ გაზრდის
+    console.log(++x);  // 7 - ჯერ გაზრდის, შემდეგ დაბეჭდავს
+  </script>
+
+</body>
+</html>
